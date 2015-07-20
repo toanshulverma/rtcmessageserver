@@ -50,14 +50,14 @@ wss.on("connection", function(ws) {
   }, 1000)
 
   console.log("websocket connection open")
+  
+  ws.on('message', function(message) {
+      console.log('received: %s', message);
+      wss.broadcast(message);
+  });
 
   ws.on("close", function() {
     console.log("websocket connection close")
     clearInterval(id)
   })
-  
-  ws.on('message', function(message) {
-        console.log('received: %s', message);
-        wss.broadcast(message);
-    });
 })
