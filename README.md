@@ -1,4 +1,4 @@
-# node-js-getting-started
+# WebRTC Demo Server
 
 Barebones Websocket server to relay messages for WebRTC Demo
 
