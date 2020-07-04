@@ -1,13 +1,12 @@
 {
-  "name": "node-js-getting-started",
+  "name": "ans-free-video-chat",
   "version": "0.1.4",
-  "description": "A sample Node.js app using Express 4",
+  "description": "Free video chat tool",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "ejs": "^2.3.1",
     "express": "^4.4.5",
     "ws": "1.1.5"
   },
